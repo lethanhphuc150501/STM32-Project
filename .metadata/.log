@@ -1,0 +1,113 @@
+!SESSION 2023-07-08 22:18:11.534 -----------------------------------------------
+eclipse.buildId=Version 1.9.0
+java.version=11.0.11
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data E:\Embedded\CO3009\STM32-Project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-07-08 22:18:18.157
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-07-08 22:18:18.260
+!MESSAGE Log4j initialized with config file E:\Embedded\CO3009\STM32-Project\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-07-08 22:18:26.925
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-07-08 22:25:07.418
+!MESSAGE Indexed 'TrafficLight' (19 sources, 78 headers) in 7.64 sec: 3,632 declarations; 13,141 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.012%)
+!SESSION 2023-07-09 21:12:11.637 -----------------------------------------------
+eclipse.buildId=Version 1.9.0
+java.version=11.0.11
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  E:\Embedded\CO3009\STM32-Project\TrafficLight\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 E:\Embedded\CO3009\STM32-Project\TrafficLight\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-07-09 21:12:50.470
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-07-09 21:12:50.695
+!MESSAGE Log4j initialized with config file E:\Embedded\CO3009\STM32-Project\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-07-09 21:13:14.522
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-07-09 21:13:22.086
+!MESSAGE Indexed 'TrafficLight' (19 sources, 78 headers) in 7.19 sec: 3,638 declarations; 13,251 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.012%)
+!SESSION 2023-07-10 05:15:24.970 -----------------------------------------------
+eclipse.buildId=Version 1.9.0
+java.version=11.0.11
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  E:\Embedded\CO3009\STM32-Project\TrafficLight\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 E:\Embedded\CO3009\STM32-Project\TrafficLight\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-07-10 05:15:31.965
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-07-10 05:15:32.114
+!MESSAGE Log4j initialized with config file E:\Embedded\CO3009\STM32-Project\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-07-10 05:15:47.016
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-07-10 05:15:49.165
+!MESSAGE Indexed 'TrafficLight' (19 sources, 78 headers) in 2.02 sec: 3,646 declarations; 13,368 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.012%)
+!SESSION 2023-07-10 06:03:55.345 -----------------------------------------------
+eclipse.buildId=Version 1.9.0
+java.version=11.0.11
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  E:\Embedded\CO3009\STM32-Project\TrafficLight\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 E:\Embedded\CO3009\STM32-Project\TrafficLight\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-07-10 06:04:08.435
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-07-10 06:04:08.508
+!MESSAGE Log4j initialized with config file E:\Embedded\CO3009\STM32-Project\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-07-10 06:04:20.588
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-07-10 06:04:22.833
+!MESSAGE Indexed 'TrafficLight' (19 sources, 78 headers) in 2.04 sec: 3,650 declarations; 13,539 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.012%)
+!SESSION 2023-07-10 20:06:49.917 -----------------------------------------------
+eclipse.buildId=Version 1.9.0
+java.version=11.0.11
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  E:\Embedded\CO3009\STM32-Project\TrafficLight\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 E:\Embedded\CO3009\STM32-Project\TrafficLight\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-07-10 20:07:29.391
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-07-10 20:07:29.677
+!MESSAGE Log4j initialized with config file E:\Embedded\CO3009\STM32-Project\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-07-10 20:07:51.735
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-07-10 20:07:56.396
+!MESSAGE Indexed 'TrafficLight' (19 sources, 78 headers) in 4.36 sec: 3,657 declarations; 13,985 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.011%)
+!SESSION 2023-07-10 20:10:58.011 -----------------------------------------------
+eclipse.buildId=Version 1.9.0
+java.version=11.0.11
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  E:\Embedded\CO3009\STM32-Project\TrafficLight\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 E:\Embedded\CO3009\STM32-Project\TrafficLight\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-07-10 20:11:03.127
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-07-10 20:11:03.207
+!MESSAGE Log4j initialized with config file E:\Embedded\CO3009\STM32-Project\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-07-10 20:11:14.715
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-07-10 20:11:17.327
+!MESSAGE Indexed 'TrafficLight' (19 sources, 78 headers) in 2.39 sec: 3,657 declarations; 13,985 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.011%)
