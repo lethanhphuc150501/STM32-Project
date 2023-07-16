@@ -1,0 +1,17 @@
+/*
+ * DigitalClock.h
+ *
+ *  Created on: 16 Jul 2023
+ *      Author: Phuc Le
+ */
+
+#ifndef INC_DIGITALCLOCK_H_
+#define INC_DIGITALCLOCK_H_
+
+#include "main.h"
+
+void display7SEG(int num);
+void update7SEG (int index);
+void updateClockBuffer();
+
+#endif /* INC_DIGITALCLOCK_H_ */

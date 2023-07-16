@@ -1,17 +1,78 @@
-21:56:18 **** Incremental Build of configuration Debug for project TrafficLight ****
+22:48:34 **** Incremental Build of configuration Debug for project DigitalClock_LEDMatrix ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "TrafficLight.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Embedded\CO3009\STM32-Project\TrafficLight\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TrafficLight.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: TrafficLight.elf
+arm-none-eabi-gcc "../Core/Src/software_timer.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/software_timer.d" -MT"Core/Src/software_timer.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/software_timer.o"
+../Core/Src/software_timer.c: In function 'timer_run':
+../Core/Src/software_timer.c:62:6: error: 'timer3_counter' undeclared (first use in this function); did you mean 'timer2_counter'?
+   62 |  if (timer3_counter > 0)
+      |      ^~~~~~~~~~~~~~
+      |      timer2_counter
+../Core/Src/software_timer.c:62:6: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/software_timer.c:67:4: error: 'timer3_flag' undeclared (first use in this function); did you mean 'timer2_flag'?
+   67 |    timer3_flag = 1;
+      |    ^~~~~~~~~~~
+      |    timer2_flag
+../Core/Src/software_timer.c: In function 'getTimer3Flag':
+../Core/Src/software_timer.c:87:9: error: 'timer3_flag' undeclared (first use in this function); did you mean 'timer2_flag'?
+   87 |  return timer3_flag;
+      |         ^~~~~~~~~~~
+      |         timer2_flag
+../Core/Src/software_timer.c:88:1: warning: control reaches end of non-void function [-Wreturn-type]
+   88 | }
+      | ^
+make: *** [Core/Src/subdir.mk:37: Core/Src/software_timer.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+22:49:07 **** Incremental Build of configuration Debug for project DigitalClock_LEDMatrix ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/software_timer.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/software_timer.d" -MT"Core/Src/software_timer.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/software_timer.o"
+arm-none-eabi-gcc -o "DigitalClock_LEDMatrix.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Embedded\CO3009\STM32-Project\DigitalClock_LEDMatrix\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DigitalClock_LEDMatrix.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DigitalClock_LEDMatrix.elf
  
-arm-none-eabi-size   TrafficLight.elf 
-arm-none-eabi-objdump -h -S  TrafficLight.elf  > "TrafficLight.list"
-arm-none-eabi-objcopy  -O ihex  TrafficLight.elf  "TrafficLight.hex"
+arm-none-eabi-size   DigitalClock_LEDMatrix.elf 
+arm-none-eabi-objdump -h -S  DigitalClock_LEDMatrix.elf  > "DigitalClock_LEDMatrix.list"
+arm-none-eabi-objcopy  -O ihex  DigitalClock_LEDMatrix.elf  "DigitalClock_LEDMatrix.hex"
    text	   data	    bss	    dec	    hex	filename
-   6036	     20	   1572	   7628	   1dcc	TrafficLight.elf
+  10528	     56	   1696	  12280	   2ff8	DigitalClock_LEDMatrix.elf
 Finished building: default.size.stdout
  
-Finished building: TrafficLight.hex
-Finished building: TrafficLight.list
+Finished building: DigitalClock_LEDMatrix.hex
  
+Finished building: DigitalClock_LEDMatrix.list
+ 
+22:50:50 **** Incremental Build of configuration Debug for project DigitalClock_LEDMatrix ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "DigitalClock_LEDMatrix.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Embedded\CO3009\STM32-Project\DigitalClock_LEDMatrix\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DigitalClock_LEDMatrix.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DigitalClock_LEDMatrix.elf
+ 
+arm-none-eabi-size   DigitalClock_LEDMatrix.elf 
+arm-none-eabi-objdump -h -S  DigitalClock_LEDMatrix.elf  > "DigitalClock_LEDMatrix.list"
+arm-none-eabi-objcopy  -O ihex  DigitalClock_LEDMatrix.elf  "DigitalClock_LEDMatrix.hex"
+   text	   data	    bss	    dec	    hex	filename
+  10488	     56	   1696	  12240	   2fd0	DigitalClock_LEDMatrix.elf
+Finished building: default.size.stdout
+ 
+Finished building: DigitalClock_LEDMatrix.hex
+ 
+Finished building: DigitalClock_LEDMatrix.list
+ 
+22:51:30 **** Incremental Build of configuration Debug for project DigitalClock_LEDMatrix ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/software_timer.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/software_timer.d" -MT"Core/Src/software_timer.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/software_timer.o"
+arm-none-eabi-gcc -o "DigitalClock_LEDMatrix.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Embedded\CO3009\STM32-Project\DigitalClock_LEDMatrix\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DigitalClock_LEDMatrix.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DigitalClock_LEDMatrix.elf
+ 
+arm-none-eabi-size   DigitalClock_LEDMatrix.elf 
+arm-none-eabi-objdump -h -S  DigitalClock_LEDMatrix.elf  > "DigitalClock_LEDMatrix.list"
+arm-none-eabi-objcopy  -O ihex  DigitalClock_LEDMatrix.elf  "DigitalClock_LEDMatrix.hex"
+   text	   data	    bss	    dec	    hex	filename
+  10532	     56	   1696	  12284	   2ffc	DigitalClock_LEDMatrix.elf
+Finished building: default.size.stdout
+ 
+Finished building: DigitalClock_LEDMatrix.hex
+ 
+Finished building: DigitalClock_LEDMatrix.list
  
