@@ -48,7 +48,7 @@ void button_reading(void)
 	}
 }
 
-unsigned char is_button_pressed(uint8_t index)
+unsigned char is_button_pressed(unsigned char index)
 {
 	if (index >= NO_OF_BUTTONS) return 0;
 	return (buttonBuffer[index] == BUTTON_IS_PRESSED);
