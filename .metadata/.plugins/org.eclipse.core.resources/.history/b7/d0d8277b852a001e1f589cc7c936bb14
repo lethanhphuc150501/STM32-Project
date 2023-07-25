@@ -1,0 +1,14 @@
+/*
+ * input_reading.c
+ *
+ *  Created on: Jul 25, 2023
+ *      Author: Phuc Le
+ */
+
+#include "input_reading.h"
+#include "main.h"
+
+#define NO_OF_BUTTONS					1
+
+#define DURATION_FOR_AUTO_INCREASING	100
+
