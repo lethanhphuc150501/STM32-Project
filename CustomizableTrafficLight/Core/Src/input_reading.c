@@ -31,7 +31,31 @@ void button_reading(void)
 			buttonBuffer[i] = debounceButtonBufer1[i];
 		if (buttonBuffer[i] == BUTTON_IS_PRESSED)
 		{
-
+			if (counterForButtonPress1s[i] < DURATION_FOR_AUTO_INCREASING)
+			{
+				counterForButtonPress1s[i]++;
+			}
+			else
+			{
+				flagForButtonPress1s[i] = 1;
+			}
+		}
+		else
+		{
+			counterForButtonPress1s[i] = 0;
+			flagForButtonPress1s[i] = 0;
 		}
 	}
+}
+
+unsigned char is_button_pressed(uint8_t index)
+{
+	if (index >= NO_OF_BUTTONS) return 0;
+	return (buttonBuffer[index] == BUTTON_IS_PRESSED);
+}
+
+unsigned char is_button_pressed_1s(unsigned char index)
+{
+	if (index >= NO_OF_BUTTONS) return 0xff;
+	return (flagForButtonPress1s[index] == 1);
 }
