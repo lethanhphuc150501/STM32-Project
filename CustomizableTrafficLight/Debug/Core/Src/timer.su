@@ -1,0 +1,10 @@
+../Core/Src/timer.c:19:6:setTimer0	16	static
+../Core/Src/timer.c:23:6:setTimer1	16	static
+../Core/Src/timer.c:27:6:setTimer2	16	static
+../Core/Src/timer.c:31:6:setTimer3	16	static
+../Core/Src/timer.c:35:6:timer_run	4	static
+../Core/Src/timer.c:55:5:get_timer0_flag	4	static
+../Core/Src/timer.c:58:5:get_timer1_flag	4	static
+../Core/Src/timer.c:61:5:get_timer2_flag	4	static
+../Core/Src/timer.c:64:5:get_timer3_flag	4	static
+../Core/Src/timer.c:67:6:HAL_TIM_PeriodElapsedCallback	16	static

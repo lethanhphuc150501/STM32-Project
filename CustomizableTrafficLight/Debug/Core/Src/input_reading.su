@@ -1,0 +1,6 @@
+../Core/Src/input_reading.c:29:6:init_buffer	16	static
+../Core/Src/input_reading.c:42:6:button_reading	16	static
+../Core/Src/input_reading.c:76:15:is_button_pressed	16	static
+../Core/Src/input_reading.c:81:15:is_button_pressed_1s	16	static
+../Core/Src/input_reading.c:86:15:is_button_held	16	static
+../Core/Src/input_reading.c:91:6:reset_flagForButtonHold	16	static

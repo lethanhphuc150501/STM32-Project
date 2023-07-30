@@ -1,0 +1,17 @@
+/*
+ * timer.c
+ *
+ *  Created on: Jul 25, 2023
+ *      Author: Phuc Le
+ */
+
+#include "timer.h"
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+	if (htim->Instance == TIM2)
+	{
+		HAL_GPIO_WritePin(SEG7_GPIO_Port, SEG7_Pin, GPIO_PIN_SET);
+		button_reading();
+	}
+}

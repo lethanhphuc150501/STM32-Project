@@ -1,0 +1,27 @@
+/*
+ * input_processing.h
+ *
+ *  Created on: Jul 25, 2023
+ *      Author: Phuc Le
+ */
+
+#ifndef __INPUT_PROCESSING_H_
+#define __INPUT_PROCESSING_H_
+
+#include "main.h"
+#include "input_reading.h"
+#include "led_display.h"
+#include "timer.h"
+#include "global.h"
+
+#define RED_INIT		30
+#define YELLOW_INIT		5
+#define GREEN_INIT		25
+
+int getMode();
+void UpdateMode();
+void LedTimeDurationInit();
+void UpdateDurationValue();
+//void fsm_for_input_processing(void);
+
+#endif /* INC_INPUT_PROCESSING_H_ */

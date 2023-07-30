@@ -1,0 +1,17 @@
+/*
+ * led_display.h
+ *
+ *  Created on: Jul 25, 2023
+ *      Author: Phuc Le
+ */
+
+#ifndef __LED_DISPLAY_H_
+#define __LED_DISPLAY_H_
+
+#include "main.h"
+
+void displayMode (int mode)
+void change_mode();
+int get_mode();
+
+#endif /* INC_LED_DISPLAY_H_ */

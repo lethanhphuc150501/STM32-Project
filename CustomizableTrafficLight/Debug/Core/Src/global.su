@@ -1,0 +1,2 @@
+../Core/Src/global.c:13:6:LedTimeDurationInit	4	static
+../Core/Src/global.c:22:5:getMode	4	static

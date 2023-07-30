@@ -1,0 +1,4 @@
+../Core/Src/input_processing.c:13:6:UpdateMode	8	static
+../Core/Src/input_processing.c:35:13:increaseDraftValue	4	static
+../Core/Src/input_processing.c:54:13:setDurationValue	16	static
+../Core/Src/input_processing.c:80:6:UpdateDurationValue	8	static
