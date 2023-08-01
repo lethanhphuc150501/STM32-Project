@@ -1,0 +1,20 @@
+/*
+ * task.c
+ *
+ *  Created on: Aug 1, 2023
+ *      Author: Phuc Le
+ */
+
+#include "task.h"
+
+void LED_1_Display() {
+	HAL_GPIO_TogglePin(LED_1_GPIO_PIN, LED_1_Pin);
+}
+
+void LED_2_Display() {
+	HAL_GPIO_TogglePin(LED_2_GPIO_Port, LED_2_Pin);
+}
+
+void LED_3_Display() {
+	HAL_GPIO_TogglePin(LED_3_GPIO_Port, LED_3_Pin);
+}
