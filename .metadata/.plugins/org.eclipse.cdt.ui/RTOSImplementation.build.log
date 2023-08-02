@@ -1,20 +1,10 @@
-20:00:18 **** Incremental Build of configuration Debug for project RTOSImplementation ****
+07:28:55 **** Incremental Build of configuration Debug for project RTOSImplementation ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/scheduler.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/scheduler.d" -MT"Core/Src/scheduler.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/scheduler.o"
-arm-none-eabi-gcc -o "RTOSImplementation.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Embedded\CO3009\STM32-Project\RTOSImplementation\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RTOSImplementation.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: RTOSImplementation.elf
- 
 arm-none-eabi-size   RTOSImplementation.elf 
-arm-none-eabi-objdump -h -S  RTOSImplementation.elf  > "RTOSImplementation.list"
-arm-none-eabi-objcopy  -O ihex  RTOSImplementation.elf  "RTOSImplementation.hex"
    text	   data	    bss	    dec	    hex	filename
-   7712	     20	   1844	   9576	   2568	RTOSImplementation.elf
+   8060	     20	   1844	   9924	   26c4	RTOSImplementation.elf
 Finished building: default.size.stdout
  
-Finished building: RTOSImplementation.hex
- 
-Finished building: RTOSImplementation.list
- 
 
-20:00:18 Build Finished. 0 errors, 0 warnings. (took 654ms)
+07:28:55 Build Finished. 0 errors, 0 warnings. (took 236ms)
 
