@@ -9,6 +9,7 @@
 #define __SCHEDULER_H_
 
 #include "stdint.h"
+#include "global.h"
 
 // MUST BE ADJUSTED FOR EACH NEW PROJECT
 #define SCH_MAX_TASKS		10
@@ -20,11 +21,12 @@ typedef struct {
 	// Pointer to the task (must be a 'void (void)' function)
 	void (* pTask)(void);
 	// Delay (ticks) until the function will (next) be run
-	uint32_t Delay;
+	int32_t Delay;
 	// Interval (ticks) between subsequent runs.
-	uint32_t Period;
+	int32_t Period;
 	// Incremented (by scheduler) when task is due to execute
-	uint8_t RunMe;
+	//int32_t Offset;
+	int8_t RunMe;
 	uint32_t TaskID;
 } sTask;
 
