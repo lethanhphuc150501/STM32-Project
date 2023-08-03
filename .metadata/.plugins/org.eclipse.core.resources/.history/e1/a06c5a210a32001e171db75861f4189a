@@ -1,0 +1,18 @@
+/*
+ * timer.c
+ *
+ *  Created on: Aug 3, 2023
+ *      Author: Phuc Le
+ */
+
+#include "timer.h"
+
+int timer0_counter;
+
+void setTimer0(in duration) {
+	timer0_counter = duration / TIMER_CYCLE;
+}
+
+void timer_run() {
+
+}

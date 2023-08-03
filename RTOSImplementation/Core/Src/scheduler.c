@@ -47,6 +47,8 @@ void SCH_Update(void) {
 	for (Index = 0; Index < SCH_MAX_TASKS; Index++) {
 		// Check if there is a task at this location
 		if (SCH_tasks_G[Index].pTask) {
+			// Not yet ready to run: just decrement the delay
+			SCH_tasks_G[Index].Delay -= 1;
 			if (SCH_tasks_G[Index].Delay <= 0) {
 				// The task is due to run
 				// Increase the 'RunMe' flag
@@ -55,9 +57,6 @@ void SCH_Update(void) {
 					// Schedule periodic tasks to run again
 					SCH_tasks_G[Index].Delay = SCH_tasks_G[Index].Period;
 				}
-			} else {
-				// Not yet ready to run: just decrement the delay
-				SCH_tasks_G[Index].Delay -= 1;
 			}
 		}
 	}
@@ -99,6 +98,7 @@ void SCH_Dispatch_Tasks(void) {
 	unsigned char Index;
 	// Dispatches (runs) the next task (if one is ready)
 	for (Index = 0; Index < SCH_MAX_TASKS; Index++) {
+		if (!(SCH_tasks_G[Index].pTask)) continue;
 		if (SCH_tasks_G[Index].RunMe > 0) {
 			(* SCH_tasks_G[Index].pTask)();	// Run the task
 			SCH_tasks_G[Index].RunMe -= 1;	// Reset/reduce RunMe flag
@@ -107,6 +107,7 @@ void SCH_Dispatch_Tasks(void) {
 			if (SCH_tasks_G[Index].Period == 0) {
 				SCH_Delete_Task(Index);
 			}
+			HAL_UART_Transmit(&huart2, (uint8_t *)data, sprintf(data, "Task %d is dispatched at %d: Runme = %d\r\n", Index, time_stamp, SCH_tasks_G[Index].RunMe), 1000);
 		}
 	}
 	// Report system status

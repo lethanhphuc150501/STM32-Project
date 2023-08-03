@@ -1,0 +1,15 @@
+/*
+ * button.c
+ *
+ *  Created on: Aug 3, 2023
+ *      Author: Phuc Le
+ */
+
+#include "button.h"
+
+enum buttonState buffer1 = BUTTON_RELEASED;
+enum buttonState buffer2 = BUTTON_RELEASED;
+
+void button_reading() {
+
+}

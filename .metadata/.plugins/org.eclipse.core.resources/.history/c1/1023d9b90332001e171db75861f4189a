@@ -1,0 +1,8 @@
+/*
+ * global.c
+ *
+ *  Created on: Aug 3, 2023
+ *      Author: Phuc Le
+ */
+
+#include "global.h"
