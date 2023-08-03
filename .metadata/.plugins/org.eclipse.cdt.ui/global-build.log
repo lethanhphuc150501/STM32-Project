@@ -3371,3 +3371,235 @@ Finished building: RTOSImplementation.hex
  
 Finished building: RTOSImplementation.list
  
+07:57:48 **** Build of configuration Debug for project FlowControl_ErrorControl_inCommunication ****
+make -j8 all 
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.d" -MT"Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o"
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f103c6tx.d" -MT"Core/Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Startup/startup_stm32f103c6tx.o" "../Core/Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f1xx_hal_msp.d" -MT"Core/Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f1xx_it.d" -MT"Core/Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f1xx.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32f1xx.d" -MT"Core/Src/system_stm32f1xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32f1xx.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:110:47: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  110 |    HAL_UART_Transmit(&huart2, (uint8_t *)str, sprintf(str, "%d\n\r", HAL_ADC_GetValue(&hadc1)), 1000);
+      |                                               ^~~~~~~
+../Core/Src/main.c:110:47: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:26:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   25 | #include "string.h"
+  +++ |+#include <stdio.h>
+   26 | /* USER CODE END Includes */
+../Core/Src/main.c:110:62: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  110 |    HAL_UART_Transmit(&huart2, (uint8_t *)str, sprintf(str, "%d\n\r", HAL_ADC_GetValue(&hadc1)), 1000);
+      |                                                             ~^       ~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                              |       |
+      |                                                              int     uint32_t {aka long unsigned int}
+      |                                                             %ld
+../Core/Src/main.c:111:23: error: 'TEST_LED_GPIO_Port' undeclared (first use in this function); did you mean 'LED_TEST_GPIO_Port'?
+  111 |    HAL_GPIO_TogglePin(TEST_LED_GPIO_Port, TEST_LED_Pin);
+      |                       ^~~~~~~~~~~~~~~~~~
+      |                       LED_TEST_GPIO_Port
+../Core/Src/main.c:111:23: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:111:43: error: 'TEST_LED_Pin' undeclared (first use in this function)
+  111 |    HAL_GPIO_TogglePin(TEST_LED_GPIO_Port, TEST_LED_Pin);
+      |                                           ^~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+07:58:11 **** Incremental Build of configuration Debug for project FlowControl_ErrorControl_inCommunication ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:110:47: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  110 |    HAL_UART_Transmit(&huart2, (uint8_t *)str, sprintf(str, "%d\n\r", HAL_ADC_GetValue(&hadc1)), 1000);
+      |                                               ^~~~~~~
+../Core/Src/main.c:110:47: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:26:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   25 | #include "string.h"
+  +++ |+#include <stdio.h>
+   26 | /* USER CODE END Includes */
+../Core/Src/main.c:110:62: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  110 |    HAL_UART_Transmit(&huart2, (uint8_t *)str, sprintf(str, "%d\n\r", HAL_ADC_GetValue(&hadc1)), 1000);
+      |                                                             ~^       ~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                              |       |
+      |                                                              int     uint32_t {aka long unsigned int}
+      |                                                             %ld
+arm-none-eabi-gcc -o "FlowControl_ErrorControl_inCommunication.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Embedded\CO3009\STM32-Project\FlowControl_ErrorControl_inCommunication\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FlowControl_ErrorControl_inCommunication.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: FlowControl_ErrorControl_inCommunication.elf
+ 
+arm-none-eabi-size   FlowControl_ErrorControl_inCommunication.elf 
+arm-none-eabi-objdump -h -S  FlowControl_ErrorControl_inCommunication.elf  > "FlowControl_ErrorControl_inCommunication.list"
+   text	   data	    bss	    dec	    hex	filename
+  13632	    120	   1712	  15464	   3c68	FlowControl_ErrorControl_inCommunication.elf
+Finished building: default.size.stdout
+ 
+Finished building: FlowControl_ErrorControl_inCommunication.list
+ 
+07:58:32 **** Incremental Build of configuration Debug for project FlowControl_ErrorControl_inCommunication ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:110:47: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  110 |    HAL_UART_Transmit(&huart2, (uint8_t *)str, sprintf(str, "%d\n\r", (int) HAL_ADC_GetValue(&hadc1)), 1000);
+      |                                               ^~~~~~~
+../Core/Src/main.c:110:47: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:26:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   25 | #include "string.h"
+  +++ |+#include <stdio.h>
+   26 | /* USER CODE END Includes */
+arm-none-eabi-gcc -o "FlowControl_ErrorControl_inCommunication.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Embedded\CO3009\STM32-Project\FlowControl_ErrorControl_inCommunication\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FlowControl_ErrorControl_inCommunication.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: FlowControl_ErrorControl_inCommunication.elf
+ 
+arm-none-eabi-size   FlowControl_ErrorControl_inCommunication.elf 
+arm-none-eabi-objdump -h -S  FlowControl_ErrorControl_inCommunication.elf  > "FlowControl_ErrorControl_inCommunication.list"
+   text	   data	    bss	    dec	    hex	filename
+  13636	    120	   1712	  15468	   3c6c	FlowControl_ErrorControl_inCommunication.elf
+Finished building: default.size.stdout
+ 
+Finished building: FlowControl_ErrorControl_inCommunication.list
+ 
+07:58:55 **** Incremental Build of configuration Debug for project FlowControl_ErrorControl_inCommunication ****
+make -j8 all 
+arm-none-eabi-size   FlowControl_ErrorControl_inCommunication.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13636	    120	   1712	  15468	   3c6c	FlowControl_ErrorControl_inCommunication.elf
+Finished building: default.size.stdout
+ 
+07:59:21 **** Incremental Build of configuration Debug for project FlowControl_ErrorControl_inCommunication ****
+make -j8 all 
+arm-none-eabi-gcc -o "FlowControl_ErrorControl_inCommunication.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Embedded\CO3009\STM32-Project\FlowControl_ErrorControl_inCommunication\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FlowControl_ErrorControl_inCommunication.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: FlowControl_ErrorControl_inCommunication.elf
+ 
+arm-none-eabi-size   FlowControl_ErrorControl_inCommunication.elf 
+arm-none-eabi-objdump -h -S  FlowControl_ErrorControl_inCommunication.elf  > "FlowControl_ErrorControl_inCommunication.list"
+arm-none-eabi-objcopy  -O ihex  FlowControl_ErrorControl_inCommunication.elf  "FlowControl_ErrorControl_inCommunication.hex"
+   text	   data	    bss	    dec	    hex	filename
+  13636	    120	   1712	  15468	   3c6c	FlowControl_ErrorControl_inCommunication.elf
+Finished building: default.size.stdout
+ 
+Finished building: FlowControl_ErrorControl_inCommunication.hex
+ 
+Finished building: FlowControl_ErrorControl_inCommunication.list
+ 
+08:04:56 **** Incremental Build of configuration Debug for project FlowControl_ErrorControl_inCommunication ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:112:47: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  112 |    HAL_UART_Transmit(&huart2, (uint8_t *)str, sprintf(str, "%d\n\r", (int) HAL_ADC_GetValue(&hadc1)), 1000);
+      |                                               ^~~~~~~
+../Core/Src/main.c:112:47: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:26:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   25 | #include "string.h"
+  +++ |+#include <stdio.h>
+   26 | /* USER CODE END Includes */
+arm-none-eabi-gcc -o "FlowControl_ErrorControl_inCommunication.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Embedded\CO3009\STM32-Project\FlowControl_ErrorControl_inCommunication\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FlowControl_ErrorControl_inCommunication.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: FlowControl_ErrorControl_inCommunication.elf
+ 
+arm-none-eabi-size   FlowControl_ErrorControl_inCommunication.elf 
+arm-none-eabi-objdump -h -S  FlowControl_ErrorControl_inCommunication.elf  > "FlowControl_ErrorControl_inCommunication.list"
+arm-none-eabi-objcopy  -O ihex  FlowControl_ErrorControl_inCommunication.elf  "FlowControl_ErrorControl_inCommunication.hex"
+   text	   data	    bss	    dec	    hex	filename
+  13676	    120	   1744	  15540	   3cb4	FlowControl_ErrorControl_inCommunication.elf
+Finished building: default.size.stdout
+ 
+Finished building: FlowControl_ErrorControl_inCommunication.hex
+ 
+Finished building: FlowControl_ErrorControl_inCommunication.list
+ 
+08:06:17 **** Incremental Build of configuration Debug for project FlowControl_ErrorControl_inCommunication ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:25:12: warning: extra tokens at end of #include directive
+   25 | #include <>string.h>
+      |            ^~~~~~
+../Core/Src/main.c:25:10: error: empty filename in #include
+   25 | #include <>string.h>
+      |          ^~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:112:47: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  112 |    HAL_UART_Transmit(&huart2, (uint8_t *)str, sprintf(str, "%d\n\r", (int) HAL_ADC_GetValue(&hadc1)), 1000);
+      |                                               ^~~~~~~
+../Core/Src/main.c:112:47: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:25:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   24 | #include <stdlib.h>
+  +++ |+#include <stdio.h>
+   25 | #include <>string.h>
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+08:06:20 **** Incremental Build of configuration Debug for project FlowControl_ErrorControl_inCommunication ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:112:47: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+  112 |    HAL_UART_Transmit(&huart2, (uint8_t *)str, sprintf(str, "%d\n\r", (int) HAL_ADC_GetValue(&hadc1)), 1000);
+      |                                               ^~~~~~~
+../Core/Src/main.c:112:47: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:26:1: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+   25 | #include <string.h>
+  +++ |+#include <stdio.h>
+   26 | /* USER CODE END Includes */
+arm-none-eabi-gcc -o "FlowControl_ErrorControl_inCommunication.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Embedded\CO3009\STM32-Project\FlowControl_ErrorControl_inCommunication\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FlowControl_ErrorControl_inCommunication.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: FlowControl_ErrorControl_inCommunication.elf
+ 
+arm-none-eabi-size   FlowControl_ErrorControl_inCommunication.elf 
+arm-none-eabi-objdump -h -S  FlowControl_ErrorControl_inCommunication.elf  > "FlowControl_ErrorControl_inCommunication.list"
+arm-none-eabi-objcopy  -O ihex  FlowControl_ErrorControl_inCommunication.elf  "FlowControl_ErrorControl_inCommunication.hex"
+   text	   data	    bss	    dec	    hex	filename
+  13676	    120	   1744	  15540	   3cb4	FlowControl_ErrorControl_inCommunication.elf
+Finished building: default.size.stdout
+ 
+Finished building: FlowControl_ErrorControl_inCommunication.hex
+ 
+Finished building: FlowControl_ErrorControl_inCommunication.list
+ 
+08:06:32 **** Incremental Build of configuration Debug for project FlowControl_ErrorControl_inCommunication ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "FlowControl_ErrorControl_inCommunication.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Embedded\CO3009\STM32-Project\FlowControl_ErrorControl_inCommunication\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FlowControl_ErrorControl_inCommunication.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: FlowControl_ErrorControl_inCommunication.elf
+ 
+arm-none-eabi-size   FlowControl_ErrorControl_inCommunication.elf 
+arm-none-eabi-objdump -h -S  FlowControl_ErrorControl_inCommunication.elf  > "FlowControl_ErrorControl_inCommunication.list"
+arm-none-eabi-objcopy  -O ihex  FlowControl_ErrorControl_inCommunication.elf  "FlowControl_ErrorControl_inCommunication.hex"
+   text	   data	    bss	    dec	    hex	filename
+  13676	    120	   1744	  15540	   3cb4	FlowControl_ErrorControl_inCommunication.elf
+Finished building: default.size.stdout
+ 
+Finished building: FlowControl_ErrorControl_inCommunication.hex
+ 
+Finished building: FlowControl_ErrorControl_inCommunication.list
+ 
+08:06:49 **** Incremental Build of configuration Debug for project FlowControl_ErrorControl_inCommunication ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "FlowControl_ErrorControl_inCommunication.elf" @"objects.list"   -mcpu=cortex-m3 -T"E:\Embedded\CO3009\STM32-Project\FlowControl_ErrorControl_inCommunication\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FlowControl_ErrorControl_inCommunication.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: FlowControl_ErrorControl_inCommunication.elf
+ 
+arm-none-eabi-size   FlowControl_ErrorControl_inCommunication.elf 
+arm-none-eabi-objdump -h -S  FlowControl_ErrorControl_inCommunication.elf  > "FlowControl_ErrorControl_inCommunication.list"
+arm-none-eabi-objcopy  -O ihex  FlowControl_ErrorControl_inCommunication.elf  "FlowControl_ErrorControl_inCommunication.hex"
+   text	   data	    bss	    dec	    hex	filename
+  13676	    120	   1744	  15540	   3cb4	FlowControl_ErrorControl_inCommunication.elf
+Finished building: default.size.stdout
+ 
+Finished building: FlowControl_ErrorControl_inCommunication.hex
+ 
+Finished building: FlowControl_ErrorControl_inCommunication.list
+ 
