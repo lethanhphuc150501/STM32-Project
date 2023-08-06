@@ -1,0 +1,85 @@
+/*
+ * uart_processing.c
+ *
+ *  Created on: 6 Aug 2023
+ *      Author: Phuc Le
+ */
+
+#include "uart_processing.h"
+
+uint8_t temp = 0;
+uint8_t buffer[MAX_BUFFER_SIZE];
+uint8_t in_buffer = 0;
+uint8_t buffer_flag = 0;
+uint8_t buffer_count = 0;
+
+uint8_t cmd_rec[MAX_BUFFER_SIZE];
+uint8_t cmd_proc[MAX_BUFFER_SIZE];
+uint8_t cmd_idx = 0;
+
+enum FrameReceive {
+	IDLE,
+	BUFFER_RECORD
+};
+
+enum FrameReceive cmd_parser = IDLE;
+
+enum CmdProcessing {
+	WAIT_REQ,
+	DATA_TRANSMIT,
+	WAIT_RES
+};
+
+enum CmdProcessing cmd_state = IDLE;
+
+void clearCmd() {
+	cmd_idx = 0;
+	memset(cmd_rec, 0, MAX_BUFFER_SIZE);
+}
+
+void command_parser_fsm() {
+	switch (cmd_parser) {
+		case IDLE:
+			if (temp == '!') {
+				cmd_parser = BUFFER_RECORD;
+				clearCmd();
+			}
+			break;
+		case BUFFER_RECORD:
+			if (temp == '#') {
+				cmd_parser = IDLE;
+			} else {
+				cmd_rec[cmd_idx++] = temp;
+			}
+			break;
+		default:
+			break;
+	}
+}
+
+char str[10];
+
+void uart_communiation_fsm() {
+	switch (cmd_state) {
+		case WAIT_REQ:
+			if (strstr((char *)cmd_rec, "RTS")) {
+				cmd_state = DATA_TRANSMIT;
+			}
+			break;
+		case DATA_TRANSMIT:
+			HAL_UART_Transmit(&huart2, (uint8_t *)str, sprintf(str, "!ADC=%d#", (int) HAL_ADC_GetValue(&hadc1)), 1000);
+			cmd_state = WAIT_RES;
+			setTimer0(3000);
+			break;
+		case WAIT_RES:
+			if (strstr((char *)cmd_rec, "OK")) {
+				cmd_state = WAIT_REQ;
+			}
+			if (getTimer0Flag()) {
+				cmd_state = DATA_TRANSMIT;
+			}
+			break;
+		default:
+			break;
+	}
+}

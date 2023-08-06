@@ -1,0 +1,27 @@
+/*
+ * uart_processing.h
+ *
+ *  Created on: 6 Aug 2023
+ *      Author: Phuc Le
+ */
+
+#ifndef __UART_PROCESSING_H_
+#define __UART_PROCESSING_H_
+
+#include <stdint.h>
+#include <string.h>
+#include "main.h"
+
+#define MAX_BUFFER_SIZE		30
+
+void command_parser_fsm();
+void uart_communiation_fsm();
+
+extern uint8_t temp;
+extern uint8_t buffer[MAX_BUFFER_SIZE];
+extern uint8_t in_buffer;
+extern uint8_t buffer_flag;
+extern uint8_t buffer_count;
+extern uint8_t cplt_cmd_flag;
+
+#endif /* INC_UART_PROCESSING_H_ */

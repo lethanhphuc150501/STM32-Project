@@ -1,0 +1,14 @@
+/*
+ * uart_processing.h
+ *
+ *  Created on: 6 Aug 2023
+ *      Author: Phuc Le
+ */
+
+#ifndef __UART_PROCESSING_H_
+#define __UART_PROCESSING_H_
+
+void command_parser_fsm();
+void uart_communiation_fsm();
+
+#endif /* INC_UART_PROCESSING_H_ */

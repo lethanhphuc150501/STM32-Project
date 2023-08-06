@@ -1,0 +1,5 @@
+../Core/Src/sw_timer.c:16:6:setTimer0	16	static
+../Core/Src/sw_timer.c:21:6:setTimer1	16	static
+../Core/Src/sw_timer.c:26:6:timer_run	4	static
+../Core/Src/sw_timer.c:42:15:getTimer0Flag	4	static
+../Core/Src/sw_timer.c:46:15:getTimer1Flag	4	static

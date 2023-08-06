@@ -1,0 +1,15 @@
+/*
+ * sw_timer.c
+ *
+ *  Created on: Aug 6, 2023
+ *      Author: Phuc Le
+ */
+
+#include "sw_timer.h"
+
+int timer0_counter = 0;
+
+void setTimer0(int duration) {
+	timer0_counter = duration / TIMER_CYCLE;
+
+}
